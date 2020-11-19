@@ -5,6 +5,8 @@ frontend:
     build:
       commands:
         - echo "inicio"
+        - pwd
+        - ls -la
         # - echo "env = {\"USER\": $USER}" >> env.js
         - echo "fim"
   artifacts:
