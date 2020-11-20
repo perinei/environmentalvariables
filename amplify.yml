@@ -4,13 +4,8 @@ frontend:
     # IMPORTANT - Please verify your build commands
     build:
       commands:
-        - echo "inicio"
-        - echo -e "var vUSER = '$USER'\nvar vNome = 'Tara';" > env.js
-        # - printf "env = {\"vUSER\": $USER} " >> env.js
-        - ls -la
+        - echo -e "var vUSER = '$USER';\nvar vHOSTNAME = '$HOSTNAME';" > env.js
         - cat env.js
-        # - echo -e "env = {\"USER\": $USER}" >> env.js
-        - echo "fim"
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
