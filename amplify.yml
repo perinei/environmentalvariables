@@ -4,7 +4,8 @@ frontend:
     # IMPORTANT - Please verify your build commands
     build:
       commands:
-        - echo -e "const vUSER = '$USER';\nconst vAPI = '$vAPI';" > env.js
+        # - echo -e "const vUSER = '$USER';\nconst vAPI = '$vAPI';" > env.js
+        - echo -e "env = { 'vUSER'" + ":" + " '$USER' };" > env.js
         - cat env.js
   artifacts:
     # IMPORTANT - Please verify your build output directory
