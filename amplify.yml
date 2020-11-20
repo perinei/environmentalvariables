@@ -9,6 +9,8 @@ frontend:
         # - var1 += ":"
         - echo -e "env = { 'vUSER':'$USER',\n'vAPI':'$vAPI' };" > env.js
         - cat env.js
+        - nodejs --version
+        - aws --version
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
