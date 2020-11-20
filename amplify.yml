@@ -5,7 +5,7 @@ frontend:
     build:
       commands:
         - echo "inicio"
-        - echo "var vUSER = '$USER'; \n console.log(vUSER);" > env.js
+        - echo "var vUSER = '$USER'; console.log(vUSER);" > env.js
         - ls -la
         - cat env.js
         # - echo "env = {\"USER\": $USER}" >> env.js
