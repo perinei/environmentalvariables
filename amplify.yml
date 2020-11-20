@@ -5,11 +5,11 @@ frontend:
     build:
       commands:
         - echo "inicio"
-        # - echo "var vUSER = '$USER';" > env.js
-        - printf "env = {\"vUSER\": $USER} " >> env.js
+        - echo "var vUSER = '$USER';" > env.js
+        # - printf "env = {\"vUSER\": $USER} " >> env.js
         - ls -la
         - cat env.js
-        # - echo "env = {\"USER\": $USER}" >> env.js
+        # - echo -e "env = {\"USER\": $USER}" >> env.js
         - echo "fim"
   artifacts:
     # IMPORTANT - Please verify your build output directory
