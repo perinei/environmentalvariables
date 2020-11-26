@@ -3,7 +3,7 @@ frontend:
   phases:
     build:
       commands:
-        - echo -e "env = { 'APIendpoint1':'$APIendpoing1',\n'APIendpoint2':'$APIendpoing2' };" > env.js
+        - echo -e "env = { 'APIendpoint1':'$APIendpoint1',\n'APIendpoint2':'$APIendpoint2' };" > env.js
         - cat env.js
   artifacts:
     baseDirectory: /
