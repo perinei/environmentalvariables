@@ -1,18 +1,11 @@
 version: 1
 frontend:
   phases:
-    # IMPORTANT - Please verify your build commands
     build:
       commands:
-        # - echo -e "const vUSER = '$USER';\nconst vAPI = '$vAPI';" > env.js
-        # - var1 = "env = { 'vUSER' "
-        # - var1 += ":"
-        - echo -e "env = { 'vUSER':'$USER',\n'vAPI':'$vAPI' };" > env.js
+        - echo -e "env = { 'APIendpoint1':'$APIendpoing1',\n'APIendpoint2':'$APIendpoing2' };" > env.js
         - cat env.js
-        - node --version
-        - aws --version
   artifacts:
-    # IMPORTANT - Please verify your build output directory
     baseDirectory: /
     files:
       - '**/*'
