@@ -5,9 +5,16 @@
 <script src="env.js"></script>
 </head>
 <body>
+
+  <h3>APIendpoint1: <div id="endpoint1"></div></h3>
+  <h3>APIendpoint1: <div id="endpoint2"></div></h3>
+
   <script>
     console.log(env.APIendpoint1);
+    document.getElementById("endpoint1").innerHTML = env.APIendpoint1;
     console.log(env.APIendpoint2);
+    document.getElementById("endpoint2").innerHTML = env.APIendpoint2;
   </script>
+
 </body>
 </html>
