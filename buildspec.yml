@@ -57,7 +57,7 @@ artifacts:
     # - location
   # name: testando
   #discard-paths: yes
-  # base-directory: environmentalvariables-master
+  base-directory: environmentalvariables-master
 #cache:
   #paths:
     # - paths
