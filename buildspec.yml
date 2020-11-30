@@ -38,8 +38,6 @@ phases:
       - pwd
       - ls -la
       - aws s3 rm --recursive "s3://${ARTIFACTS_BUCKET}/"
-      - unzip environmentalvariables-master.zip
-      - rm environmentalvariables-master.zip
       - echo "test" > test.js
   #post_build:
     #commands:
